@@ -3,7 +3,7 @@ import React, { useState, useCallback } from "react";
 
 const SkillList = ({ skills, onDelete }) => {
   return (
-    <ul>
+    <ul id="skill-list">
       {skills.map((skill, index) => (
         <li
           key={index}
@@ -17,6 +17,7 @@ const SkillList = ({ skills, onDelete }) => {
     </ul>
   );
 };
+
 
 const UseCallbackComp = () => {
   const [skills, setSkills] = useState(["HTML", "CSS", "JavaScript", "React"]);
